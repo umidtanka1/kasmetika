@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Red Hat Display;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  gap: 40px;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+nav ul a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: crimson;
+}
+nav .icon {
+  display: flex;
+  gap: 30px;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 100px;
+  background-image: url(./assets/fon.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #F9F6F5;
+}
+.page .text {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
+}
+.page .text h1 {
+  font-size: 50px;
+}
+.page .text p {
+  font-size: 15px;
+  width: 60%;
+  color: #555555;
+}
+.page .text .input {
+  position: relative;
+  width: 200px;
+  height: 40px;
+}
+.page .text .input input {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+}
+.page .text .input img {
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+.page .text button {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #402F2C;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 30px 100px;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #EEEEEE;
+}
+
+.page1 {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.page1 .boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.page1 .boxes .box {
+  border: 2px solid rgba(104, 90, 82, 0.1882352941);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+}
+.page1 .boxes .box .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page1 .boxes .box .buttons {
+  display: flex;
+  gap: 30px;
+}
+.page1 .boxes .box .buttons .button1 {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #402F2C;
+  border: none;
+}
+.page1 .boxes .box .buttons .button2 {
+  width: 150px;
+  height: 40px;
+}
+.page1 .text1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page1 .text1 .h1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.page1 .text1 li {
+  list-style: none;
+  text-decoration: none;
+}
+.page1 .text1 li a {
+  color: black;
+  list-style: none;
+  font-size: 40px;
+}
+
+.narx {
+  width: 100%;
+  height: 150px;
+  background-color: #f4e0e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.narx .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 400px;
+}
+.narx .card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 380px;
+}
+
+.page2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 100px;
+  gap: 40px;
+  margin: 100px 0px;
+}
+.page2 .matn {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.page2 .matn button {
+  width: 150px;
+  height: 40px;
+  margin-right: 500px;
+  color: white;
+  background-color: #402F2C;
+  border: none;
+}
+.page2 .matn h1 {
+  font-size: 60px;
+}
+
+.page3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 0px 100px;
+  margin: 100px 0px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.page3 .matn1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  width: 50%;
+}
+.page3 .matn1 .images {
+  display: flex;
+  gap: 20px;
+}
+.page3 .matn1 .images img :nth-child(1) {
+  border: 2px solid #555555;
+}
+.page3 .matn1 .images img :nth-child(2) {
+  border: 2px solid green;
+}
+
+.end {
+  width: 100%;
+  height: auto;
+  background-color: #f5f3f3;
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.end .book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -100px;
+  gap: 300px;
+  border-bottom: 2px solid #555555;
+  padding-bottom: 50px;
+}
+.end .book h1 {
+  font-size: 30px;
+}
+.end .book .pen {
+  width: 400px;
+  height: 50px;
+  background-color: white;
+  position: relative;
+}
+.end .book .pen input {
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  padding: 10px;
+}
+.end .book .pen button {
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  color: white;
+  background-color: #402F2C;
+  border: none;
+}
+.end .oxiri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.end .oxiri .end1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.end .oxiri .end2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.end .oxiri .end3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.end .oxiri .end3 .mouse {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    height: 50px;
+    padding: 30px 40px;
+  }
+  nav ul {
+    display: none;
+  }
+  .page {
+    padding: 0px 40px;
+  }
+  .page .text {
+    width: 100%;
+  }
+  .page .text p {
+    width: 80%;
+  }
+  .page .text h1 {
+    width: 80%;
+  }
+  .page1 .text1 {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .page1 .text1 .h1 {
+    width: 100%;
+  }
+  .page1 .boxes {
+    flex-wrap: wrap;
+  }
+  .narx .card {
+    gap: 200px;
+  }
+  .narx .card1 {
+    gap: 180px;
+  }
+  .page2 {
+    flex-wrap: wrap;
+    padding: 0px 30px;
+  }
+  .page2 .matn {
+    width: 100%;
+  }
+  .page3 {
+    flex-wrap: wrap;
+    padding: 0px 30px;
+  }
+  .page3 .matn1 {
+    width: 100%;
+  }
+  .end {
+    padding: 70px 30px;
+    flex-wrap: wrap;
+  }
+  .end .book {
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+  .end .oxiri {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .end .end1 {
+    width: 80%;
+  }
+  .end .end2 {
+    width: 60%;
+  }
+  .end .end3 {
+    width: 60%;
+  }
+  .end .q {
+    display: flex;
+    gap: 70px;
+  }
+}/*# sourceMappingURL=main.css.map */

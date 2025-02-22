@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Red Hat Display;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    gap: 40px;
+    ul{
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        a{
+            color: black;
+            list-style: none;
+            text-decoration: none;
+        }
+        a:hover{
+            color: crimson;
+        }
+    }
+    .icon{
+        display: flex;
+        gap: 30px;
+    }
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 100px;
+    background-image: url(./assets/fon.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: #F9F6F5;
+    .text{
+        width: 50%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: start;
+        justify-content: center;
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 15px;
+            width: 60%;
+            color: #555555;
+        }
+        .input{
+            position: relative;
+            width: 200px;
+            height: 40px;
+            input{
+                position: absolute;
+                width: 200px;
+                height: 40px;
+            }
+            img{
+                position: absolute;
+                right: 0;
+                top: 3px;
+            }
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            color: white;
+            background-color: #402F2C;
+            border: none;
+        }
+    }
+}
+.logo{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 100px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #EEEEEE;
+}
+.page1{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    .boxes{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        .box{
+            border: 2px solid #685A5230;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 30px;
+            .price{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .buttons{
+                display: flex;
+                gap: 30px;
+                .button1{
+                    width: 150px;
+                    height: 40px;
+                    color: white;
+                    background-color: #402F2C;
+                    border: none;
+                }
+                .button2{
+                    width: 150px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .text1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .h1{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        li{
+            list-style: none;
+            text-decoration: none;
+            a{
+                color: black;
+                list-style: none;
+                font-size: 40px;
+            }    
+        }
+    }
+}
+.narx{
+    width: 100%;
+    height: 150px;
+    background-color: #f4e0e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 400px;
+    }
+    .card1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 380px;
+    }
+}
+.page2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+    gap: 40px;
+    margin: 100px 0px;
+    .matn{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        button{
+            width: 150px;
+            height: 40px;
+            margin-right: 500px;
+            color: white;
+            background-color: #402F2C;
+            border: none;
+        }
+        h1{
+            font-size: 60px;
+        }
+    }
+}
+.page3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0px 100px;
+    margin: 100px 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    .matn1{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px;
+        width: 50%;
+        .images{
+            display: flex;
+            gap: 20px;
+            img :nth-child(1){
+                border:2px solid #555555;
+            }
+            img :nth-child(2){
+                border:2px solid green;
+            }
+        }
+    }
+}
+.end{
+    width: 100%;
+    height: auto;
+    background-color: #f5f3f3;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+        .book{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -100px;
+            gap: 300px;
+            border-bottom: 2px solid #555555;
+            padding-bottom: 50px;
+            h1{
+                font-size: 30px;
+            }
+            .pen{
+                width: 400px;
+                height: 50px;
+                background-color: white;
+                position: relative;
+                input{
+                    width: 400px;
+                    height: 50px;
+                    position: absolute;
+                    left: 0;
+                    padding: 10px;
+                }
+            button{
+                width: 80px;
+                height: 30px;
+                margin-top: 10px;
+                position: absolute;
+                right: 10px;
+                top: 0px;
+                color: white;
+                background-color: #402F2C;
+                border: none;
+            }
+        }
+    }
+    .oxiri{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+        .end1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .end2{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .end3{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .mouse{
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    nav{
+        height: 50px;
+        padding: 30px 40px;
+        ul{
+            display: none;
+        }
+    }
+    .page{
+        padding: 0px 40px;
+        .text{
+            width: 100%;
+            p{
+                width: 80%;
+            }
+            h1{
+                width: 80%;
+            }
+        }
+    }
+    .page1{
+        .text1{
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 40px;
+            .h1{
+                width: 100%;
+            }
+        }
+        .boxes{
+            flex-wrap: wrap;
+        }
+    }
+    .narx{
+        .card{
+            gap: 200px;
+        }
+        .card1{
+            gap: 180px;
+        }
+    }
+    .page2{
+        flex-wrap: wrap;
+        padding: 0px 30px;
+        .matn{
+            width: 100%;
+        }
+    }
+    .page3{
+        flex-wrap: wrap;
+        padding: 0px 30px;
+        .matn1{
+            width: 100%;
+        }
+    }
+    .end{
+        padding: 70px 30px;
+        flex-wrap: wrap;
+        .book{
+            gap: 0px;
+            flex-wrap: wrap;
+        }
+        .oxiri{
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .end1{
+            width: 80%;
+        }
+        .end2{
+            width: 60%;
+        }
+        .end3{
+            width: 60%;
+        }
+        .q{
+            display: flex;
+            gap: 70px;
+        }
+    }
+}
